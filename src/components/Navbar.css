@@ -1,0 +1,15 @@
+.navigation {
+    font-weight: bold;
+    overflow: hidden;    
+}
+
+ul {
+    list-style-type: none;
+    float: right;
+    display: block;
+}
+
+li {
+    float: left;
+    padding: 16px;
+}
