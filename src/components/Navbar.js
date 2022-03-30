@@ -11,40 +11,44 @@ import LinkedInBlue from '../assets/icons/linkedin_blue.png';
 const Navbar = () => {
     return (
         <div className='navigation'>
-            <div>
-                <div class='icon'>
-                    <a href='https://github.com/nmoody9899'>
-                        <img src={GitHubWhite} /> 
-                    </a>
-                    <a class='color-swap' href='https://github.com/nmoody9899'>
-                        <img src={GitHubBlue} /> 
-                    </a>
+            <div class='head'>
+                <div class='social-media'>
+                    <div class='icon'>
+                        <a href='https://github.com/nmoody9899'>
+                            <img src={GitHubWhite} /> 
+                        </a>
+                        <a class='color-swap' href='https://github.com/nmoody9899'>
+                            <img src={GitHubBlue} /> 
+                        </a>
+                    </div>
+                    <div class='icon'>
+                        <a href='https://www.linkedin.com/in/nicholasmoody1/'>
+                            <img src={LinkedInWhite} /> 
+                        </a>
+                        <a class='color-swap' href='https://www.linkedin.com/in/nicholasmoody1/'>
+                            <img src={LinkedInBlue} /> 
+                        </a>
+                    </div>
                 </div>
-                <div class='icon'>
-                    <a href='https://www.linkedin.com/in/nicholasmoody1/'>
-                        <img src={LinkedInWhite} /> 
-                    </a>
-                    <a class='color-swap' href='https://www.linkedin.com/in/nicholasmoody1/'>
-                        <img src={LinkedInBlue} /> 
-                    </a>
+                <div>
+                    <ul>
+                        <li>
+                            <Link to='/' className={`links`}>Home</Link>
+                        </li>
+                        <li>
+                            <Link to='/about' className={`links`}>About</Link>
+                        </li>
+                        <li>
+                            <Link to='/experience' className={`links`}>Experience</Link>
+                        </li>
+                        <li>
+                            <Link to='/projects' className={`links`}>Projects</Link>
+                        </li>
+                        <li>
+                            <Link to='/contact' className={`links`}>Contact</Link>
+                        </li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>
-                        <Link to='/' className={`links`}>Home</Link>
-                    </li>
-                    <li>
-                        <Link to='/about' className={`links`}>About</Link>
-                    </li>
-                    <li>
-                        <Link to='/experience' className={`links`}>Experience</Link>
-                    </li>
-                    <li>
-                        <Link to='/projects' className={`links`}>Projects</Link>
-                    </li>
-                    <li>
-                        <Link to='/contact' className={`links`}>Contact</Link>
-                    </li>
-                </ul>
             </div>
         </div>
     );
