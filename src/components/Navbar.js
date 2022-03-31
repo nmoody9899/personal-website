@@ -1,7 +1,7 @@
 import './Navbar.css';
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import GitHubWhite from '../assets/icons/github_white.png';
 import GitHubBlue from '../assets/icons/github_blue.png';
@@ -12,40 +12,40 @@ const Navbar = () => {
     return (
         <div className='navigation'>
             <div class='head'>
-                <div class='social-media'>
+                <div>
                     <div class='icon'>
                         <a href='https://github.com/nmoody9899'>
-                            <img src={GitHubWhite} /> 
+                            <img src={GitHubWhite} class='social-media' /> 
                         </a>
                         <a class='color-swap' href='https://github.com/nmoody9899'>
-                            <img src={GitHubBlue} /> 
+                            <img src={GitHubBlue} class='social-media' /> 
                         </a>
                     </div>
                     <div class='icon'>
                         <a href='https://www.linkedin.com/in/nicholasmoody1/'>
-                            <img src={LinkedInWhite} /> 
+                            <img src={LinkedInWhite} class='social-media' /> 
                         </a>
                         <a class='color-swap' href='https://www.linkedin.com/in/nicholasmoody1/'>
-                            <img src={LinkedInBlue} /> 
+                            <img src={LinkedInBlue} class='social-media' /> 
                         </a>
                     </div>
                 </div>
                 <div>
                     <ul>
                         <li>
-                            <Link to='/' className={`links`}>Home</Link>
+                            <NavLink exact to='/' className={`links`} activeClassName='active'>Home</NavLink>
                         </li>
                         <li>
-                            <Link to='/about' className={`links`}>About</Link>
+                            <NavLink exact to='/about' className={`links`} activeClassName='active'>About</NavLink>
                         </li>
                         <li>
-                            <Link to='/experience' className={`links`}>Experience</Link>
+                            <NavLink exact to='/experience' className={`links`} activeClassName='active'>Experience</NavLink>
                         </li>
                         <li>
-                            <Link to='/projects' className={`links`}>Projects</Link>
+                            <NavLink exact to='/projects' className={`links`} activeClassName='active'>Projects</NavLink>
                         </li>
                         <li>
-                            <Link to='/contact' className={`links`}>Contact</Link>
+                            <NavLink exact to='/contact' className={`links`} activeClassName='active'>Contact</NavLink>
                         </li>
                     </ul>
                 </div>

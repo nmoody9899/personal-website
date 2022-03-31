@@ -31,7 +31,7 @@
     padding: 5px;
 }
 
-img {
+.social-media {
     width: 40px;
 }
 
@@ -55,5 +55,9 @@ li {
 }
 
 .links:hover {
+    color: #85CDCA;
+}
+
+.active {
     color: #85CDCA;
 }
