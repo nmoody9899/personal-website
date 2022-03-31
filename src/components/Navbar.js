@@ -39,9 +39,6 @@ const Navbar = () => {
                             <NavLink exact to='/about' className={`links`} activeClassName='active'>About</NavLink>
                         </li>
                         <li>
-                            <NavLink exact to='/experience' className={`links`} activeClassName='active'>Experience</NavLink>
-                        </li>
-                        <li>
                             <NavLink exact to='/projects' className={`links`} activeClassName='active'>Projects</NavLink>
                         </li>
                         <li>
@@ -55,7 +52,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-
-//                 <a href='https://www.linkedin.com/in/nicholasmoody1/'>
-// <img src={LinkedInWhite} />
-// </a>
