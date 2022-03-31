@@ -1,4 +1,4 @@
-import './Page.css';
+import './Home.css';
 
 import React from 'react';
 import Image from '../assets/images/home_image.png';
